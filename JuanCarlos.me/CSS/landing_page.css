@@ -1,0 +1,182 @@
+/* Landing Page */
+.row_one {
+    clear: left;
+    font-family: 'Unica One';
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+    flex-basis: 0;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.row_one p, .row_two p, .row_three p {
+    line-height: 120%;
+    font-family: 'Sorts Mill Goudy';
+    font-size: 19px;
+    
+    /* Cardo|Cormorant+Garamond|Sorts+Mill+Goudy */
+}
+
+.col_one {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    border-bottom: 1px solid grey;
+}
+
+    .col_one img {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
+
+    .row_one h1, .row_two h1, .row_three h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #fae9c1;
+        background: #2e365f;
+        height: 30px;
+        width: 100%;
+        padding-top: 3px;
+        padding-left: 15px;
+    }
+
+    .col_one p {
+        overflow: hidden;
+    }
+
+.col_two {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+    .col_two img {
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .col_two h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .col_two p {
+        overflow: hidden;
+    }
+
+
+.row_two {
+    font-family: 'Unica One';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+    flex-basis: 0;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.row_three {
+    font-family: 'Unica One';
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+}
+
+    .row_three img { 
+        width: 35%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row_three h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .row_three p {
+        margin-bottom: 20px;
+    }
+
+@media (max-width: 1000px) {
+    .row_one p, .row_two p, .row_three p {
+        font-size: 18px;
+    } 
+}
+
+@media (max-width: 768px) and (min-width: 480px) {   
+    
+    .col_one, .col_two {
+        margin-right: 0;
+    }
+    
+    .row_one p, .row_two p, .row_three p {
+        font-size: 17px !important;
+    } 
+    
+    .row_one {
+        flex-direction: column;
+    }
+    
+    .row_one img {
+        width: 50%;
+    }
+    
+    .row_one p, .row_two p {
+        font-size: 16px;
+    } 
+    
+    .row_two {
+        flex-direction: column;
+    }   
+    
+    .row_two img {
+        width: 50%;
+    }
+    
+    .row_two img {
+      width: 55%;   
+    }
+}
+
+@media (max-width: 480px) {
+    .col_one, .col_two {
+        margin-right: 0 !important;
+    }
+    
+    .row_one, .row_two {
+        flex-direction: column;
+    }
+    
+    .row_one img {
+        float: none;
+        width: 100% !important;;
+    }
+    
+    .row_one h1, .row_two {
+        margin-top: 10px;
+    }
+    
+    .row_one img, .row_two img, .row_three img {
+        float: none;
+        width: 100% !important;
+    } 
+    
+    .row_one .col_one img, .row_two .col_one img {
+        width: 105% !important;
+    }
+}
